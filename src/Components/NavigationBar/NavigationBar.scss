@@ -1,0 +1,122 @@
+$classic-purple: #5461bb;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3em;
+  align-items: center;
+  height: 7vh;
+  background-color: white;
+  border-bottom: 1px solid #e8e8ef;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+
+  #tab-nav-top {
+    position: absolute;
+    left: 50%;
+    // top: 24.2%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    .tab-nav {
+      height: 6vh;
+    }
+
+    span {
+      height: 3px;
+      width: 70px;
+    }
+  }
+
+  #nav-right {
+    display: flex;
+    // max-width: 10em;
+
+    #notification-bell {
+      width: 1.5em;
+      position: relative;
+      padding-right: 1rem;
+
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: gray;
+      }
+
+      #notification-dot {
+        background-color: rgb(255, 96, 96);
+        height: 10px;
+        width: 10px;
+        border-radius: 100px;
+        position: absolute;
+        top: 25%;
+        right: 45%;
+      }
+    }
+
+    #user-profile {
+      // margin-right: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      #user-image {
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.3em;
+
+        img {
+          min-height: 100%;
+          width: 30px;
+          object-fit: contain;
+          align-items: center;
+          border-radius: 100%;
+        }
+      }
+
+      #user-name {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        position: relative;
+        letter-spacing: 0.1px;
+
+        i {
+          cursor: pointer;
+          margin-left: 0.8rem;
+          color: gray;
+        }
+      }
+    }
+
+    #user-dropdown {
+      width: 7em;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      position: absolute;
+      top: 90%;
+      right: 3%;
+      padding: 1em 1.5em;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      button {
+        background-color: $classic-purple;
+        color: white;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

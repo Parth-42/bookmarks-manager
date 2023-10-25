@@ -1,0 +1,52 @@
+.text-input{
+    position: relative;
+
+
+.textinput {
+    padding: 0.7em 1em;
+    background-color: rgb(241,241,241, 0.2);
+    color: #ffffff;
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+label{
+    padding-left: 0.7em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: block;
+}
+
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 0.7rem;
+    transform: translateY(-50%);
+    color: #94949E;
+}
+
+// .i{
+//     position: absolute;
+//     left: 0.7em;
+//     top: 0.5em;
+//     color: #868686;
+//     font-size: 15px;
+// }
+
+.primary {
+    padding: 0.7em 1em;
+}
+
+
+.secondary{
+    padding-left: 35px;
+    border-radius: 5px;
+    color: black;
+}
+}

@@ -1,0 +1,41 @@
+$classic-purple: #5461bb;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafb;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh;
+
+  #content {
+    display: flex;
+    height: 93vh;
+    overflow: auto;
+
+    #main-area {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      height: 93vh;
+
+      .quick-link {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+      }
+
+      .selected-tags {
+        margin-top: 1rem;
+        display: flex;
+      }
+    }
+  }
+}

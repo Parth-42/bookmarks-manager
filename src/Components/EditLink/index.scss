@@ -1,0 +1,130 @@
+#add-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  #header-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    #header-icons {
+      display: flex;
+      flex: 1;
+      #save-to {
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        margin-top: 1.5em;
+        color: darkgray;
+      }
+      #folder-icon {
+        display: flex;
+        flex: 1;
+        margin-top: 1.5em;
+        justify-content: flex-end;
+        padding-right: 1rem;
+        span {
+          color: cornflowerblue;
+          font-size: 18px;
+        }
+      }
+    }
+    #add-text-header {
+      display: flex;
+      flex: 1;
+      padding-left: 0.4rem;
+      color: black;
+      font-weight: bold;
+      font-size: 23px;
+    }
+  }
+}
+#content-wrapper {
+  display: flex;
+  flex-direction: row;
+  #folder-component-wrapper {
+    display: flex;
+    flex: 1;
+    width: 350px;
+    height: 400px;
+    padding-left: 1rem;
+    overflow: auto;
+  }
+  #folder-text-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    #text-input-wrap {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      .folder-input-component {
+        margin-bottom: 2em;
+        width: 100%;
+        padding-right: 20px;
+        input {
+          background-color: white;
+          padding: 0.8rem 1rem;
+          border-radius: 10px;
+          width: 100%;
+          border: 2px solid rgb(235, 235, 235);
+          color: black;
+          height: 2.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+  #link-component-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    #text-input-wrap {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .tag-component {
+        margin-bottom: 2em;
+        width: 100%;
+        input {
+          background-color: white;
+          padding: 0.8rem 1rem;
+          border-radius: 10px;
+          border: 2px solid rgb(235, 235, 235);
+          color: black;
+          height: 2.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+  #checkbox-wrapper {
+    display: flex;
+  }
+}
+#footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  #info-text {
+    display: flex;
+    flex: 1;
+    font-style: italic;
+    font-size: 12px;
+    color: darkgray;
+  }
+  #end-save-button {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+#folder-component-wrapper > div > div > ul > li {
+  padding-left: 0;
+}

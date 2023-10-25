@@ -1,0 +1,31 @@
+  .radio-toolbar {
+    margin: 10px; 
+  }
+  
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: white;
+      color: darkgray;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 60%;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+      border: 2px solid white;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+      background-color: #6A8DE7;
+      color: white;
+      transition: 0.2s ease-in-out;
+  }

@@ -1,0 +1,177 @@
+.card-container {
+  border-radius: 1.2em;
+  display: inline-grid;
+  grid-auto-rows: 1fr;
+  /* overflow: auto; */
+  font-family: sans-serif;
+  background-color: white;
+  position: relative;
+
+  img {
+    border-radius: 1.2em 1.2em 0em 0em;
+    height: 0;
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 90fr 10fr;
+
+    .text {
+      max-width: 19rem;
+      padding-right: 2rem;
+    }
+
+    .modify {
+      padding-top: 1rem;
+      position: relative;
+    }
+
+    .modify i {
+      cursor: pointer;
+      color: #8f8f8f;
+    }
+  }
+
+  .description {
+    // min-height: 3rem;
+    // max-height: 5rem;
+  }
+
+  .folder-path {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    max-width: 350px;
+    overflow-y: auto;
+    p {
+      margin: 0;
+    }
+  }
+
+  .description {
+    min-height: 2rem;
+    max-height: 2.5rem;
+    overflow: hidden;
+  }
+
+  h3 {
+    color: #494949;
+  }
+
+  p {
+    color: #8f8f8f;
+    font-size: 0.8rem;
+  }
+
+  .fa-folder {
+    color: #a5b3ff;
+  }
+
+  .fa-chevron-right {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #favourite {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.8em;
+    right: 1em;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 0 1px #c4c4c4;
+    flex-wrap: wrap;
+  }
+
+  .favourite {
+    color: rgb(253, 92, 92);
+    transition: 0.2s ease-in-out;
+  }
+
+  .notFavourite {
+    color: #e4a750;
+    transition: 0.2s ease-in-out;
+  }
+
+  .select {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.3em;
+    left: -0.4em;
+    cursor: pointer;
+  }
+
+  .selected {
+    color: #5f8fe3;
+    transition: 0.2s ease-in-out;
+  }
+
+  .deselected {
+    color: rgb(219, 219, 219);
+    transition: 0.2s ease-in-out;
+  }
+
+  .buttonMenu {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 3.5em;
+    width: 5.5em;
+    position: absolute;
+    top: 2.5em;
+    left: -4.2em;
+    background-color: white;
+    border-radius: 0.5em;
+    transition: 0.2s ease-in-out;
+  }
+
+  .buttonMenu button {
+    margin-left: 1rem;
+    border: none;
+    background-color: white;
+    margin-top: 0.5em;
+    cursor: pointer;
+    color: #8f8f8f;
+    font-size: 0.8rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .text h3 {
+    font-weight: bold;
+    margin-bottom: -0.2em;
+    max-height: 1.5rem;
+    min-height: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.boxSelected {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.2s ease-in-out;
+}
+
+.boxDeselected {
+  box-shadow: none;
+  transition: 0.2s ease-in-out;
+}

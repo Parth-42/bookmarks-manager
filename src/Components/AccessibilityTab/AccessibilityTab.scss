@@ -1,0 +1,125 @@
+#accessibility {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  height: 2.5em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  #search {
+    display: flex;
+    justify-content: space-between;
+
+    .search-component {
+      input {
+        width: 30em;
+        height: 3em;
+        background-color: #f1f1f1;
+        color: black;
+      }
+    }
+  }
+
+  .filterIcon {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #cfcfd0;
+    border-radius: 10px;
+    color: #cfcfd0;
+    width: 2.5rem;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .bookmark-buttons {
+    height: 100%;
+    // margin-left: 8rem;
+    margin-left: auto;
+
+    button {
+      height: 2.5em;
+      width: 2.5em;
+      margin-right: 1rem;
+      background-color: #eeedf7;
+      color: #608fe3;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-sizing: border-box;
+      object-fit: contain;
+      font-size: 1.1em;
+      position: relative;
+    }
+
+    button:hover {
+      background-color: #e0dfeb;
+    }
+  }
+
+  #buttons {
+    display: flex;
+
+    #add-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      padding: 1em;
+      background-color: white;
+      border: 1px solid #6a8ae6;
+      width: 10em;
+      color: #6a8ae6;
+      margin-right: 2em;
+      cursor: pointer;
+      font-size: 15px;
+      text-transform: uppercase;
+
+      span {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.6rem;
+      }
+    }
+
+    #switch-button {
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eff1f6;
+      height: 2.5em;
+
+      button {
+        border-radius: 10px;
+        position: relative;
+        height: 100%;
+        width: 2em;
+        background-color: white;
+        border: none;
+        background-color: #eff1f6;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #92929d;
+      }
+
+      .grid-view {
+        border-radius: 10px 0px 0px 10px;
+        transition: 0.2s ease-in-out;
+      }
+
+      .list-view {
+        border-radius: 0px 10px 10px 0px;
+        transition: 0.2s ease-in-out;
+      }
+
+      .active {
+        background-color: #5f8fe3;
+        color: white;
+      }
+    }
+  }
+}

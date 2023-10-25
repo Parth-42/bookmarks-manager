@@ -1,0 +1,30 @@
+.btn-container {
+  .button {
+    padding: 0.8em 3em;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(187, 187, 187);
+    display: inline-block;
+  }
+  .button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .primary {
+    background-color: white;
+    color: black;
+  }
+  .secondary {
+    background-color: #6a8de7;
+    color: white;
+  }
+}
+
+.disabled {
+  .button:hover {
+    cursor: not-allowed;
+  }
+}

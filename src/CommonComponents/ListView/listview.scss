@@ -1,0 +1,102 @@
+.card-list-container {
+
+  width: 100%;
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    width: auto;
+    border: 1px solid darkgray;
+    background-color: white;
+    border-radius: 8px;
+    
+  }
+
+  .listItem {
+    background-color: white;
+  }
+
+  .inlineList {
+    padding-right: 10px;
+  }
+
+  .rounded_img img {
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #heart {
+    color: darkgray;
+    margin-right: 17px;
+    cursor: pointer;
+  }
+
+  #chevronRight {
+    font-size: 16px;
+  }
+  #separator {
+    font-size: 12px;
+  }
+
+  #folderOpen {
+    color: #6a8de7;
+    font-size: 12px;
+    padding-right: -13px;
+  }
+
+  #folderLink {
+    padding-left: 5px;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+  }
+  #tagLink {
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+  }
+
+  #tagsContainer {
+    padding-left: 7px;
+  }
+
+  #avatar {
+    border-radius: 5px;
+    height: 50px;
+  }
+  #description {
+    font-size: 10px;
+    max-width: 20px;
+  }
+
+  .icons {
+    font-size: 18px;
+    color: gray;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  #gridContainer {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  #checkedCircle {
+    font-size: 18px;
+    color: #3a86ff;
+  }
+  #gridItems {
+    margin-top: 30px;
+  }
+
+  .favourite{
+    color: rgb(253, 92, 92);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .notFavourite{
+    transition: 0.2s ease-in-out;
+  }
+}

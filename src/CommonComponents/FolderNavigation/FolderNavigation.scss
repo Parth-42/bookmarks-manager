@@ -1,0 +1,185 @@
+.d-flex {
+  display: flex;
+}
+
+.d-tree-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  .d-tree-node {
+    padding: 0.75rem 1.25rem;
+    padding-bottom: 0rem;
+
+    .input-tag {
+      display: flex;
+    }
+  }
+
+  .d-tree-node:hover {
+    cursor: pointer;
+  }
+
+  .d-tree-head {
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .d-tree-toggler {
+    color: #a5b3ff;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .d-tree-toggler.active {
+    margin-top: 7px;
+  }
+
+  .margin-r {
+    margin-right: 10px;
+    color: #a5b3ff;
+  }
+
+  .margin-r-icon {
+    margin-right: 5px;
+    color: cornflowerblue;
+    transition: 0.15s ease-in-out;
+    font-size: 18px;
+  }
+
+  .margin-r-icon.active {
+    transform: rotate(90deg);
+    transition: 0.15s ease-in-out;
+  }
+
+  .iconContainer {
+    display: inline-flex;
+  }
+
+  .icons {
+    font-size: 12px;
+    color: gainsboro;
+    margin-left: 15px;
+  }
+
+  .folderLabel {
+    color: darkgray;
+  }
+
+  .menuContainer {
+    display: inline-flex;
+    padding-left: 20px;
+  }
+
+  #menuIcon {
+    font-size: 12px;
+    color: gainsboro;
+  }
+
+  .menuWidth {
+    width: 20vw;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  #menuItem {
+    font-size: smaller;
+  }
+
+  #menuItem:hover {
+    background-color: gainsboro;
+  }
+
+  .insideFolderHead {
+    display: inline-flex;
+  }
+
+  #checkboxx {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  .tags-with-checkbox > div:nth-child(2) {
+    margin-left: 1rem;
+  }
+
+  .notdisplayed {
+    display: none;
+  }
+
+  .displayed {
+    display: inline-flex;
+    margin: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .notHidden {
+    display: inline-flex;
+    margin: auto;
+  }
+
+  .icons :hover {
+    color: cornflowerblue;
+  }
+
+  .inputLabel {
+    border: none;
+    outline: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .col {
+    min-width: 200px;
+    padding-left: 10px;
+  }
+
+  .col:hover {
+    background-color: #f4f7fd;
+  }
+
+  .addUnderLine {
+    border-bottom: 2px solid cornflowerblue;
+  }
+
+  .addUnderLine:hover {
+    border-bottom: 2px solid cornflowerblue;
+    background-color: white;
+  }
+
+  .menuDisplayer {
+    display: inline-flex;
+  }
+
+  .folder-selected {
+    background-color: #6a8de6;
+    border-radius: 5px;
+
+    .folderLabel {
+      color: white;
+    }
+
+    .icons {
+      color: white;
+    }
+
+    .margin-r {
+      color: white;
+    }
+
+    &:hover {
+      background-color: #6a8de6 !important;
+    }
+  }
+}
+.empty-div {
+  margin-left: 12px;
+}

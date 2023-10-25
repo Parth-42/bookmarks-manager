@@ -1,0 +1,1 @@
+export default './TagAdder.tsx'
